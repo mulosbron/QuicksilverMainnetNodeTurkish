@@ -132,7 +132,7 @@ sudo systemctl daemon-reload && systemctl enable quicksilverd && sudo systemctl 
 quicksilverd status 2>&1 | jq .SyncInfo
 ```
 
-#### * Validatoru oluşturun. (Doğruylayıcı oluşturmadan önce cüzdanınızda QCK bulunmalı)
+#### * Validator'u oluşturun. (Validator'u oluşturmadan önce cüzdanınızda QCK bulunmalı)
 ```
 quicksilverd tx staking create-validator \
 --amount 50000000uqck \
@@ -148,7 +148,10 @@ quicksilverd tx staking create-validator \
 -y
 ```
 
-#### * Son olarak yukardaki komutun verdiği hash'i explorer'da aratın. Sonuç `success` ise olmuştur.
+#### * Son olarak yukarıdaki komutun verdiği hash'i explorer'da aratın. Sonuç `success` ise olmuştur.
 ![quicksilver](https://user-images.githubusercontent.com/91866065/208239193-54d83ef4-5135-4f69-99eb-c9e945dc1752.png)
 
 ![quicksilver2](https://user-images.githubusercontent.com/91866065/208239258-133168ab-fa12-43a0-aa62-0eaeb8b0a3e7.png)
+
+
+[Mulosbron's Validator](https://quicksilver.explorers.guru/validator/quickvaloper1m4yzu0peztkaup2wf3fe2fw4g77u7ucml9c58k)
