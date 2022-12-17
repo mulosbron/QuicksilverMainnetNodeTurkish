@@ -153,5 +153,4 @@ quicksilverd tx staking create-validator \
 
 ![quicksilver2](https://user-images.githubusercontent.com/91866065/208239258-133168ab-fa12-43a0-aa62-0eaeb8b0a3e7.png)
 
-
-[Mulosbron's Validator](https://quicksilver.explorers.guru/validator/quickvaloper1m4yzu0peztkaup2wf3fe2fw4g77u7ucml9c58k)
+# <h1 align="center">[Mulosbron's Validator](https://quicksilver.explorers.guru/validator/quickvaloper1m4yzu0peztkaup2wf3fe2fw4g77u7ucml9c58k) </h1>
