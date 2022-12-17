@@ -68,7 +68,7 @@ make install
 quicksilverd version
 ```
 
-## Düğümü başlatmak için gerekli adımlar
+## Node'u başlatmak için gerekli adımlar
 
 #### * <> işaretlerini kaldırın.
 ```
@@ -122,7 +122,7 @@ WantedBy=multi-user.target
 EOF
 ```
 
-#### * Düğümü başlatın.
+#### * Node'u başlatın.
 ```
 sudo systemctl daemon-reload && systemctl enable quicksilverd
 sudo systemctl restart quicksilverd && journalctl -o cat -fu quicksilverd
@@ -133,7 +133,7 @@ sudo systemctl restart quicksilverd && journalctl -o cat -fu quicksilverd
 quicksilverd status 2>&1 | jq .SyncInfo
 ```
 
-#### * Doğrulayıcıyı oluşturun. (Doğruylayıcı oluşturmadan önce cüzdanınızda QCK bulunmalı)
+#### * Validatoru oluşturun. (Doğruylayıcı oluşturmadan önce cüzdanınızda QCK bulunmalı)
 ```
 quicksilverd tx staking create-validator \
 --amount 50000000uqck \
