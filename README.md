@@ -141,7 +141,7 @@ quicksilverd tx staking create-validator \
 --commission-max-rate "0.20" \
 --commission-rate "0.1" \
 --min-self-delegation "1" \
---website="https://github.com/mulosbron" \
+--website="https://github.com/mulosbron/QuicksilverMainnetNodeTurkish" \
 --pubkey=$(quicksilverd tendermint show-validator) \
 --moniker <NODEADI> \
 --chain-id quicksilver-1 \
