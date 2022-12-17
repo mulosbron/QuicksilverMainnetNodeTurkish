@@ -27,7 +27,7 @@ sudo apt-get install make build-essential gcc git jq chrony screen -y
 
 screen -S quicksilver
 ```
-
+#### * İşimiz bittiğinde screen'den çıkmak için CTRL+A+D tuş kombinasyonlarını kullanın. Screen'e tekrar girmek için `screen -r quicksilver` kodunu kullanın.
 ## Go'yu yükleyin
 ```
 wget https://golang.org/dl/go1.19.3.linux-amd64.tar.gz
@@ -147,8 +147,6 @@ quicksilverd tx staking create-validator \
 --from <CUZDANADI> \
 -y
 ```
-
-#### * Screen'den çıkmak için CTRL+A+D tuş kombinasyonlarını kullanın. Screen'e tekrar girmek için `screen -r quicksilver` kodunu kullanın.
 
 #### * Son olarak yukardaki komutun verdiği hash'i explorer'da aratın. Sonuç `success` ise olmuştur.
 ![quicksilver](https://user-images.githubusercontent.com/91866065/208239193-54d83ef4-5135-4f69-99eb-c9e945dc1752.png)
