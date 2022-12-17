@@ -30,8 +30,6 @@ screen -S quicksilver
 
 ## Go'yu yükleyin
 ```
-sudo rm -rvf /usr/local/go/
-
 wget https://golang.org/dl/go1.19.3.linux-amd64.tar.gz
 
 sudo tar -C /usr/local -xzf go1.19.3.linux-amd64.tar.gz
@@ -51,6 +49,7 @@ export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
 ```
 go version
 ```
+![goversion](https://user-images.githubusercontent.com/91866065/208239917-629f76d2-419f-4372-a933-4c8f1b63ba54.png)
 
 ## Quicksilver'ı yükleyin
 ```
@@ -122,10 +121,9 @@ WantedBy=multi-user.target
 EOF
 ```
 
-#### * Node'u başlatın.
+#### * Node'u başlatın. journalctl ekranından çıkmak için CTRL+C basın.
 ```
-sudo systemctl daemon-reload && systemctl enable quicksilverd
-sudo systemctl restart quicksilverd && journalctl -o cat -fu quicksilverd
+sudo systemctl daemon-reload && systemctl enable quicksilverd && sudo systemctl restart quicksilverd && journalctl -o cat -fu quicksilverd
 ```
 
 #### * Senkronize durumunu kontrol edin. `"catching_up": false` çıktısını alana kadar diğer adıma geçmeyin.
@@ -148,6 +146,9 @@ quicksilverd tx staking create-validator \
 --from <CUZDANADI> \
 -y
 ```
+
+#### * Screen'den çıkmak için CTRL+A+D tuş kombinasyonlarını kullanın. Screen'e tekrar girmek için `screen -r quicksilver` kodunu kullanın.
+
 #### * Son olarak yukardaki komutun verdiği hash'i explorer'da aratın. Sonuç `success` ise olmuştur.
 ![quicksilver](https://user-images.githubusercontent.com/91866065/208239193-54d83ef4-5135-4f69-99eb-c9e945dc1752.png)
 
