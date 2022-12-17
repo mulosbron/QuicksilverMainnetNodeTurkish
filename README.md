@@ -66,6 +66,7 @@ make install
 ```
 quicksilverd version
 ```
+![qckversion](https://user-images.githubusercontent.com/91866065/208240758-cb50e8a6-28f3-40ca-9f1e-c3526d72731c.png)
 
 ## Node'u başlatmak için gerekli adımlar
 
